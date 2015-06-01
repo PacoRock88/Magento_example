@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Compania_Cap> <!--nombre compáñia + modulo (ruta)-->
+             <version>0.0.1</version>
+       </Compania_Cap>
+    </modules>
+
+    <global>
+        <blocks>
+            <cap>
+                <class>Compania_Cap_Block</class>
+            </cap>
+        </blocks>
+    </global>
+<!--declaracion de touter, layouts, traducciones-->
+    <frontend>
+        <!--declaracion de routers-->
+    	<routers>
+    		<cap>
+    			<use>standard</use> <!--va por defecto-->
+    			<args><!--argumentos-->
+                    <!--modulo que contiene el nombre (ruta) de la compañia y el nombre del modulo-->
+    				<module>Compania_Cap</module> 
+    				<frontName>cap</frontName><!--como se muestra en la url,  test.pengostores.mx/cap/controller/action-->
+    			</args>
+    		</cap>
+    	</routers>
+
+        <layout>
+            <updates>
+                <cap>
+                    <file>cap.xml</file>
+                </cap>
+            </updates>
+        </layout>
+    </frontend>
+</config>

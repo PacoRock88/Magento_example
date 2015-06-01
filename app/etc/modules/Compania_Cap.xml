@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Compania_Cap> <!--nombre compáñia + modulo (ruta)-->
+			<active>true</active>
+			<codePool>local</codePool>
+		</Compania_Cap>
+	</modules>
+</config>
